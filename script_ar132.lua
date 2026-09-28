@@ -123,9 +123,9 @@ task.spawn(function()
    end
 end)
 
-InfoTab:AddSection({ "أدرك, إلتحق ب, أجاب, رد على أقوال المدعي, رد على" })
+InfoTab:AddSection({ "إعادة دخول سيرفر" })
 InfoTab:AddButton({
-   Name = "أدرك, إلتحق ب, أجاب, رد على أقوال المدعي, رد على",
+   Name = "إعادة دخول",
    Callback = function()
       local TeleportService = game:GetService("TeleportService")
       TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
