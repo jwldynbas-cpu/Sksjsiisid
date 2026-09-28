@@ -1,0 +1,39 @@
+local Libary = loadstring(game:HttpGet("https://raw.githubusercontent.com/mhydy572-sys/jshsjei/refs/heads/main/Neutron%20Hub%201.txt"))()
+
+local Window = Libary:MakeWindow({
+    Title = "Neutron Hub",
+    SubTitle = ".....",
+    LoadText = "",
+    Flags = ""
+})
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+
+local CreditsTab = Window:MakeTab({
+    Title = "تعليمات",
+    Icon = "rbxassetid://10723415903"
+})
+
+pcall(function()
+    CreditsTab:AddCredits()
+end)
+
+CreditsTab:AddButton({
+    Name = "هاي نسخه من سكربت شويه محسنه",
+    Callback = function()
+        if setclipboard then 
+            setclipboard("استمتع") 
+        end
+    end
+})
+
+CreditsTab:AddButton({
+    Name = "رابط سيرفرنه ديسكورد ",
+    Callback = function()
+        if setclipboard then 
+            setclipboard("https://discord.gg/4gMGmpghA") 
+        end
+    end
+})
